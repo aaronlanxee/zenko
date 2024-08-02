@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %} LogIn {% endblock %}
+
+
+{% block body %}
+    <main class="container py-5 text-center">
+            <form action="/register" method="post" class="f">
+                <div class="mb-3">
+                    <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="username" placeholder="Username" type="text">
+                </div>
+                <div class="mb-3">
+                    <div class="col">
+                        <input class="form-control mx-auto w-auto" name="password" placeholder="Password" type="password">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <input class="form-control mx-auto w-auto" name="verify" placeholder="Confirm Password" type="password">
+                </div>
+                <button class="btn btn-primary" type="submit">Register</button>
+                <h5><a href="/login">Log In</a></h5>
+            </form>
+    </main>
+
+{% endblock %}
